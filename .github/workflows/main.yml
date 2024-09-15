@@ -16,9 +16,7 @@ jobs:
     - name: Run flake8
       run: flake8 .
 
-  deploy-impaas:
-    runs-on: ubuntu-latest
-    steps:
+
       - name: ImPaaS-Deploy
         id: impaas-deploy
         uses: /impaas/impaas-deploy@v3
