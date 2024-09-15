@@ -28,5 +28,5 @@ jobs:
       uses: /impaas/impaas-deploy@v3
       with:
         app-name: app12024demo1
-        deployment-token: 00ec46bec1ab0a2532edfdf93cd685b5e622914c1a57bbbe6744b91fddfa74e3
+        deployment-token: 1eb2f790571519883b4fbecdce1e9a437b6c049deb67c958d979cb073bed61a8
         method: PLATFORM
