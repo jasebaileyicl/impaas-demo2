@@ -16,3 +16,13 @@ jobs:
     - name: Run flake8
       run: flake8 .
 
+  deploy-impaas:
+    steps:
+      - name: ImPaaS-Deploy
+        id: impaas-deploy
+        uses: /impaas/impaas-deploy@v3
+        with:
+          - app-name: APP_NAME_GOES_HERE
+            deployment-token: TOKEN_GOES_HERE
+            method: PLATFORM
+
