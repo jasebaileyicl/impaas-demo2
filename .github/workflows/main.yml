@@ -17,6 +17,7 @@ jobs:
       run: flake8 .
 
   deploy-impaas:
+    runs-on: ubuntu-latest
     steps:
       - name: ImPaaS-Deploy
         id: impaas-deploy
