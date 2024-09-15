@@ -17,11 +17,16 @@ jobs:
       run: flake8 .
 
 
+
+  deploy-to-impaas:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Checkout
+      uses: actions/checkout@v4
     - name: ImPaaS-Deploy
       id: impaas-deploy
       uses: /impaas/impaas-deploy@v3
       with:
-        - app-name: APP_NAME_GOES_HERE
-          deployment-token: TOKEN_GOES_HERE
-          method: PLATFORM
-
+        app-name: app12024demo1
+        deployment-token: 00ec46bec1ab0a2532edfdf93cd685b5e622914c1a57bbbe6744b91fddfa74e3
+        method: PLATFORM
