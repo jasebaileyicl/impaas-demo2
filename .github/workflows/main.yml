@@ -17,11 +17,11 @@ jobs:
       run: flake8 .
 
 
-      - name: ImPaaS-Deploy
-        id: impaas-deploy
-        uses: /impaas/impaas-deploy@v3
-        with:
-          - app-name: APP_NAME_GOES_HERE
-            deployment-token: TOKEN_GOES_HERE
-            method: PLATFORM
+    - name: ImPaaS-Deploy
+      id: impaas-deploy
+      uses: /impaas/impaas-deploy@v3
+      with:
+        - app-name: APP_NAME_GOES_HERE
+          deployment-token: TOKEN_GOES_HERE
+          method: PLATFORM
 
